@@ -1,0 +1,19 @@
+---
+layout: default
+title: 大芋
+---
+
+<% var first_post=site.posts[0]; %>
+<section class="content">
+  <h1>
+    <a href="<%- first_post.url %>"><%- first_post.title %></a>
+  </h1>
+
+  <section class="byline">
+    <%- first_post.date.format('YYYY-MM-DD') %>
+  </section>
+
+  <%- first_post.content %>
+
+  <a href="<%- first_post.path %>">leave comment</a>
+</section>

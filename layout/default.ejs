@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiav="content-type" content="text/html; charset=utf-8" />
+  <title><%- page.title %></title>
+
+  <meta name="author" content="<%- config.author %>" />
+  <meta name="description" content="record Spud's life as he want." />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="/images/avatar.png" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="bio">
+      <span>be fool. <br/>be cool.</span>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/<%- config.usernames.github %>"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/<%- config.usernames.twitter %>"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/archives/">archives</a></li>
+        <li><a href="/about/">about</a></li>
+      </ul>
+    </section>
+  </section>
+  <%- body %>
+</body>
+
+</html>
