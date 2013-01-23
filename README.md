@@ -1,4 +1,4 @@
-# Light
+# Left
 
 A translation of [left](zachholman.com/posts/left/) for [Hexo](https://github.com/tommy351/hexo).
 
