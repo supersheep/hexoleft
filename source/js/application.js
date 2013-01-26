@@ -1,4 +1,4 @@
 // Your JavaScript
 $(function(){
-	$(".content a").attr("target","_blank");
+	$(".content p a").attr("target","_blank");
 });

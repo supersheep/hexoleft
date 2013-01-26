@@ -4,7 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <meta http-equiav="content-type" content="text/html; charset=utf-8" />
-  <title><%- page.title %></title>
+  <%
+  var title = [];
+  if (page.current > 1) title.push(__('page', page.current));
+  if (page.title) title.push(page.title);
+  if (page.category) title.push(page.category);
+  if (page.tag) title.push(page.tag);
+  if (page.archive){
+    if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));
+    else title.push(__('archive_a'));
+  }
+  title.push(config.title);
+  %>
+  <title><%= title.join(' | ') %></title>
 
   <meta name="author" content="<%- config.author %>" />
   <meta name="description" content="record Spud's life as he want." />
