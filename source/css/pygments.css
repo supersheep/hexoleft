@@ -1,13 +1,15 @@
 .highlight {
   margin: 15px 0;
   background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px inset;
   font-size: 14px;
   line-height: 1.5;
   padding: 0px 15px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   overflow: hidden;
   text-shadow: none;
+  border:1px solid #ddd;
   color: #111;
 }
 .hightlight code{
@@ -16,6 +18,16 @@
 .highlight:hover {
   overflow: auto;
 }
+
+.highlight .line-number { width:5px; }
+.highlight .keyword { color: #004461; } /* Keyword */
+.highlight .comment { color: #888888; } /* Comment */
+.highlight .string { color: #4e9a06; } /* String */
+/* .highlight .title { color: #0066bb; } */ /* Title */
+.highlight .type { color: #888888; } /* Type */
+.highlight .number { color: #990000; } /* Number */
+
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #888888 } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
