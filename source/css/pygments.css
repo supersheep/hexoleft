@@ -1,3 +1,7 @@
+.gutter{
+  width:20px;
+}
+
 .highlight {
   margin: 15px 0;
   background-color: #eee;
