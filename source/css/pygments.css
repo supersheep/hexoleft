@@ -1,4 +1,5 @@
 .gutter{
+  display: none;
   width:20px;
 }
 
@@ -23,7 +24,7 @@
   overflow: auto;
 }
 
-.highlight .line-number { width:5px; }
+.highlight .line-number { display: none}
 .highlight .keyword { color: #004461; } /* Keyword */
 .highlight .comment { color: #888888; } /* Comment */
 .highlight .string { color: #4e9a06; } /* String */
