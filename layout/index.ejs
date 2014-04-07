@@ -3,7 +3,7 @@ layout: default
 title: 大芋
 ---
 
-<% var first_post=site.posts.first() %>
+<% var first_post=site.posts.sort("date","desc").first() %>
 <section class="content">
   <h1>
     <a href="<%- first_post.path %>"><%- first_post.title %></a>

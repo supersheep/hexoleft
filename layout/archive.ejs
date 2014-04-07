@@ -5,7 +5,7 @@ title: 存档
 
 <section class="content">
   <ul class="listing">
-    <% site.posts.forEach(function(post){ %>
+    <% site.posts.sort("date","desc").each(function(post){ %>
     <li>
       <span><%- post.date.format("YYYY-MM-DD") %></span> <a href="<%- post.permalink %>"><%- post.title %></a>
     </li>
